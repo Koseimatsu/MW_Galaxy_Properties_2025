@@ -35,7 +35,7 @@ if __name__ == "__main__":
         for iatten, atten_model in enumerate(Attenuation_Models):
             for itheta in range(len(Inclinations)):
                 # Load the attenuation curve for each inclination
-                filename = f"../{model}/{atten_model}/" + "MW_Attenuation_Curves_i{:02}".format(Inclinations[itheta]) + ".dat"
+                filename = f"../Matsumoto2025_Attenuation/{model}/{atten_model}/" + "MW_Attenuation_Curves_i{:02}".format(Inclinations[itheta]) + ".dat"
                 attenuation_curve = load_attenuation_curve(filename)
                 print(f"Model: {model}, Attenuation: {atten_model}"
                       f", Inclination: {Inclinations[itheta]} degrees")
